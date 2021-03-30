@@ -13,7 +13,7 @@ public class NewOrderMain {
                 var value = key + ",67523,1234";
                 dispatcher.send("ECOMMERCE_NEW_ORDER", key, value);
 
-                var email = "Thank you for your order! We are processing your order!";
+                var email = "Thank you for your order! We are processing your order!!";
                 dispatcher.send("ECOMMERCE_SEND_EMAIL", key, email);
             }
         }
